@@ -1,11 +1,25 @@
-export const darkTheme  =  {
-    background: "#0D0C0F",
-    font: "#FFFFFF",
-    boxshadow: "rgb(117 21 21 / 20%)"
-}
 
 export const lightTheme = {
-    background: '#fff',
-    font: '#000',
-    boxshadow: "rgba(0, 0, 255, .2)"
-  };
+  colors: {
+    primary: "#00C56E",
+    background: "#F9FAFB",  
+    card: "#FFFFFF",     
+    text: "#111827",        
+    text_secondary: "#6B7280",
+    border: "#E5E7EB",
+    gray_800: "#F3F4F6", 
+  },
+};
+
+
+export const darkTheme = {
+  colors: {
+    primary: "#00C56E",      
+    background: "#0a0a0f",   
+    card: "#0A0A0F",        
+    text: "#FFFFFF",         
+    text_secondary: "#A1A1AA", 
+    border: "#27272A",       
+    gray_800: "#1F1F23",     
+  },
+};
