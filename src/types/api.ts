@@ -216,12 +216,10 @@ export interface components {
             message: string;
             errors?: unknown;
         };
-        BaseResponseGeneric: {
+        BaseResponsePaginatedGeneric: {
             success: boolean;
             message: string;
-            data?: {
-                [key: string]: unknown;
-            }[];
+            data: components["schemas"]["PaginatedGenericData"];
         };
         Coluna: {
             coluna: string;
@@ -230,6 +228,16 @@ export interface components {
         ConsultasIdNome: {
             readonly id: number;
             nome: string;
+        };
+        PaginatedGenericData: {
+            pagina: number;
+            tamanho: number;
+            total_paginas: number;
+            total_registros: number;
+            /** @description Lista dinâmica de registros (linhas da consulta) */
+            resultados: {
+                [key: string]: unknown;
+            }[];
         };
         /**
          * @description * `string` - string
@@ -273,7 +281,7 @@ export interface operations {
                     [name: string]: unknown;
                 };
                 content: {
-                    "application/json": components["schemas"]["BaseResponseGeneric"];
+                    "application/json": components["schemas"]["BaseResponsePaginatedGeneric"];
                 };
             };
             /** @description Erro interno do servidor */

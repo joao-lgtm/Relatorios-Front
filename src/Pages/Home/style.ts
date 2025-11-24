@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
-  overflow-x: auto; /* habilita scroll horizontal quando necessário */
+  overflow-x: auto;
 `;
 
 export const Main = styled.main`
@@ -12,42 +12,53 @@ export const Main = styled.main`
   align-items: center;
 `;
 
-export const Table = styled.table`
-  min-width: 100%; /* tabela ocupa pelo menos toda a largura do container */
-  border-collapse: collapse;
+export const FilterContainer = styled.div`
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
 `;
 
-export const TableHead = styled.thead`
-  background-color: #990099;
-`;
+// export const TableContainer = styled.div`
+// `;
 
-export const TableBody = styled.tbody`
-    background-color: white;
-`;
+// export const Table = styled.table`
+//   min-width: 100%;
+//   border-collapse: collapse;
+//   text-align: center;
+// `;
 
-export const Th = styled.th`
-  padding: 15px;
+// export const TableHead = styled.thead`
+//   background-color: #990099;
+// `;
 
-  &:first-child {
-    border-top-left-radius: 15px;
-    border-right: 1px solid black;
-  }
+// export const TableBody = styled.tbody`
+//     background-color: white;
+// `;
 
-  &:last-child {
-    border-top-right-radius: 15px;
-    border-left: 1px solid black;
-  }
+// export const Th = styled.th`
+//   padding: 15px;
 
-  &:not(:first-child):not(:last-child) {
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-  }
-`;
+//   &:first-child {
+//     border-top-left-radius: 15px;
+//     border-right: 1px solid black;
+//   }
 
-export const Td = styled.td`
-  padding: 10px;
-  white-space: nowrap;
-  color: black;
-`;
+//   &:last-child {
+//     border-top-right-radius: 15px;
+//     border-left: 1px solid black;
+//   }
 
-export const Tr = styled.tr``;
+//   &:not(:first-child):not(:last-child) {
+//     border-left: 1px solid black;
+//     border-right: 1px solid black;
+//   }
+// `;
+
+// export const Td = styled.td`
+//   padding: 10px;
+//   white-space: nowrap;
+//   color: black;
+//   border: 1px solid;
+// `;
+
+// export const Tr = styled.tr``;

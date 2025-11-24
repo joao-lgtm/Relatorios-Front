@@ -15,7 +15,7 @@ export const Global = createGlobalStyle`
   body{
     background: ${({ theme }) => theme.colors.background};
     color: ${({ theme }) => theme.colors.text};
-    transition: background 0.5s ease-in-out;
+    transition: background  ease-in-out;
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
   }

@@ -8,6 +8,7 @@ export const lightTheme = {
     text_secondary: "#6B7280",
     border: "#E5E7EB",
     gray_800: "#F3F4F6", 
+    teste: "#0f3460"
   },
 };
 
@@ -21,5 +22,7 @@ export const darkTheme = {
     text_secondary: "#A1A1AA", 
     border: "#27272A",       
     gray_800: "#1F1F23",     
+
+    teste: "#0f3460"
   },
 };
